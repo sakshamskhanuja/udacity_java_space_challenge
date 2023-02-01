@@ -1,3 +1,5 @@
+import java.util.Random;
+
 public class U2 extends Rocket {
 
     /**
@@ -13,13 +15,13 @@ public class U2 extends Rocket {
     public boolean launch() {
         double chanceOfLaunchExplosion = 0.04 * ((getWeight() - 18000D) / (getWeightCargo() - 18000D));
 
-        return (chanceOfLaunchExplosion <= 0.04);
+        return (chanceOfLaunchExplosion <= new Random().nextInt(3, 10) / 100D);
     }
 
     @Override
     public boolean land() {
         double chanceOfCrashLanding = 0.08 * ((getWeight() - 18000D) / (getWeightCargo() - 18000D));
 
-        return (chanceOfCrashLanding <= 0.08);
+        return (chanceOfCrashLanding <= new Random().nextInt(6, 10) / 100D);
     }
 }
