@@ -1,16 +1,23 @@
 public class Item {
-    // Name of the item.
-    private final String name;
 
-    // Weight of the item.
+    /**
+     * Represents the weight of the item.
+     */
     private final int weight;
 
-    // Initializes the Item object.
+    /**
+     * Initializes an {@link Item} object.
+     *
+     * @param name   Name of the item.
+     * @param weight Weight of the item.
+     */
     public Item(String name, int weight) {
-        this.name = name;
         this.weight = weight;
     }
 
+    /**
+     * Returns the weight of the item.
+     */
     public int getWeight() {
         return weight;
     }

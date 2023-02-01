@@ -1,4 +1,10 @@
 public class U1 extends Rocket {
+
+    /**
+     * Spaceship cost = 100,000,000 million
+     * Spaceship weight = 10 Tonnes
+     * Spaceship weight carrying max cargo = 18 Tonnes
+     */
     public U1() {
         super(100000000, 10000, 18000);
     }
