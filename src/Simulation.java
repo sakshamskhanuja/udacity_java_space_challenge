@@ -170,6 +170,7 @@ public class Simulation {
                     System.out.println("Landing Successful");
                 } else {
                     System.out.println("Rocket crashed during landing.");
+                    i--;
                 }
             } else {
                 System.out.println("Rocket exploded during launch. Sending again.");
@@ -197,6 +198,7 @@ public class Simulation {
                     System.out.println("Landing Successful");
                 } else {
                     System.out.println("Rocket crashed during landing.");
+                    i--;
                 }
             } else {
                 System.out.println("Rocket exploded during launch. Sending again.");
